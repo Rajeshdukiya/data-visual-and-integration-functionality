@@ -5,7 +5,7 @@ import Create from "./components/Create";
 
 function App() {
   const { search, pathname} =useLocation();
-  console.log(search, pathname)
+  // console.log(search, pathname)
   return (
     <div className="h-screen w-screen flex">
     {(pathname != "/" || search.length > 0) && (

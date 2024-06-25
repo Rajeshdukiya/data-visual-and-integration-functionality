@@ -9,13 +9,12 @@ const Context = (props) => {
     const getproducts = async () =>{
         try{
             const {data} = await axios("/products");
-            // console.log(data);
             setproduct(data);
         } catch (error) {
             console.log(error);
         }
     };
-
+    console.log(product)
     useEffect(() => {
         getproducts();
     }, []);
